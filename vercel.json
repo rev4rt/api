@@ -1,17 +1,13 @@
 {
-  "engines": {
-    "node": "18.x"
-  }
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.3.6"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index.php" }
+  ]
 },
-
-{
-    "functions": {
-        "api/*.php": {
-            "runtime": "vercel-php@0.6.1",
-            "memory": 1024,
-            "maxDuration": 10
-        }
-    },
     "routes": [
         {
             "src": "/favicon.ico",
