@@ -1,14 +1,9 @@
 {
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.3.6"
-    }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.php" }
-  ]
-}
-},
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.2"
+        }
+    },
     "routes": [
         {
             "src": "/favicon.ico",
