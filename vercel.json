@@ -8,6 +8,7 @@
     { "source": "/(.*)", "destination": "/api/index.php" }
   ]
 }
+},
     "routes": [
         {
             "src": "/favicon.ico",
